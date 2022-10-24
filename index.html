@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Accueil - Hello world</title>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <meta name="Hello World" content= "Découvrez mon premier site HelloWorld inspiré d'articles sur l'UI Design "/>
+
+        <!-- Meta OpenGraph/Facebook -->
+        
+        <meta property="og:title" content="Arnaud Marbehant - HelloWorld"/>
+        <meta property="og:description" content="Découvrez mon premier site HelloWorld inspiré d'articles sur l'UI Design"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="http://arnaud-marbehant.be/"/>
+        <meta property="og:image" content="http://arnaud-marbehant.be/assets/images/profil.png"/>
+        
+
+        <!-- Meta Twitter -->
+        <meta name="twitter:url" content="http://arnaud-marbehant.be/"/>
+        <meta name="twitter:creator" content="@Marbeuh17"/>
+        <meta name="twitter:title" content="Arnaud Marbehant - HelloWorld"/>
+        <meta name="twitter:description" content="Découvrez mon premier site HelloWorld inspiré d'articles sur l'UI Design"/>
+        <!-- Twitter summary card with large image must be at least 280x150px -->
+        <meta name="twitter:image" content="http://arnaud-marbehant.be/assets/images/profil.png"/>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/app.js" defer></script>
+    
+
+    </head>
+    <body>
+        <div class="container">
+            <header class="section section--header">
+                <nav class="menu">
+                    <ul class="menu__liste">
+                        <li class="menu__el menu__el--actif"><a href="index.html">Accueil</a></li>
+                        <li class="menu__el"><a href="inspiration.html">Inspiration</a></li>
+                    </ul>
+                </nav>
+                <button class="btn btn--theme">changer de thème</button>
+            </header>
+
+            <main class="section section--main">
+                <div class="avatar">
+                    <img src="assets/images/profil.png" srcset="assets/images/profil@2x.png 2x" alt="mon avatar" />
+                </div>
+                <div class="col">
+                    <h1 class="title">arnaud <br> marbehant</h1>
+                    <ul class="reseaux">
+                        <li class="reseaux__el reseaux__el--mail"><a href="mailto:arnaudmarbehant@hotmail.com">Mail</a></li>
+                        <li class="reseaux__el reseaux__el--twitter"><a href="https://twitter.com/Marbeuh17">Twitter</a></li>
+                        <li class="reseaux__el reseaux__el--instagram"><a href="https://www.instagram.com/arnaud.marbehant/">Instagram</a></li>
+                    </ul>
+                    <p>
+                        La lecture des articles et particulièrement les 
+                        deux sur lesquelles je me suis focaliser mon 
+                        permis de comprendre qu’il y avait des règles 
+                        à suivre. En effet il n’y pas que l’inspiration et la 
+                        créativité. Pour que les choses soient bien faites, 
+                        il faut avant tout penser à l’utilisateur et à son 
+                        utilisation des éléments. Le tout en associant ca 
+                        avec un design et une création qui s’identifie au 
+                        sujet. Apprendre cela m’a changer ma vision des 
+                        choses et m’a permis de me concentrer plus sur 
+                        l’utilisation des éléments de l’utilisateur plutôt que 
+                        sur mes envies personnelles de création.
+                    </p>
+                </div> 
+            </main>
+        </div> 
+        <hr>
+        <footer class="section section--footer">
+            <div class="container">
+                <ul class="menu__liste menu__liste--footer">
+                    <li class="menu__el--footer"><a href="ui-kit.html">Ui Kit</a></li>
+                    <li class="menu__el--footer"><a href="credits.html">Crédits</a></li>
+                </ul>
+                <a class="dwm" href="http://dwm.re"><img src="assets/images/logo_DWM.svg" alt="logo dwm" /></a>
+                
+                <small class="copyright">Arnaud Marbehant © 2020-2021</small>
+            </div>
+        </footer>
+    </body>
+</html>

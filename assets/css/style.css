@@ -1,0 +1,398 @@
+@import 'normalize.css';
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #000;
+}
+
+.dark{
+    color: white;
+    background: black;
+}
+
+.container{
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.section{
+    margin-bottom: 50px;
+}
+
+.section--header{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.section--footer{
+    margin-bottom: 0;
+    padding: 20px 0;
+}
+
+.avatar{
+    flex-basis: 50%;
+    flex-shrink: 0;
+}
+
+.title{
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: red;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+
+.menu__liste{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.menu__el{
+    margin-right: 15px;
+}
+
+.menu__el a{
+    text-decoration: none;
+    color: red;
+    font-size: 24px;
+
+}
+
+.menu__el--actif a{
+    border-bottom: 2px solid #FF0000;
+}
+
+.menu__el a:hover{
+    border-top: 5px solid #FF0000;
+    background-color: rgba(255, 0, 0, 0.15);
+}
+
+.menu__el a:focus{
+    border-top: 5px solid #FF0000;
+    background-color: rgba(255, 0, 0, 0.15);
+}
+
+.menu--ui{
+    color: red;
+    font-size: 24px;
+}
+
+.menu__el-actif--ui{
+    border-bottom: 2px solid #FF0000;
+}
+
+.menu__el-hover--ui{
+    border-top: 5px solid #FF0000;
+    background-color: rgba(255, 0, 0, 0.15);
+}
+
+.reseaux{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.reseaux__el{
+    margin: 0 10px;
+}
+
+.reseaux__el a{
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: url(../picto/mail.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.reseaux__el--twitter a{
+    background-image: url(../picto/twitter.svg);
+}
+
+.reseaux__el--instagram a{
+    background-image: url(../picto/insta.svg);
+}
+
+.reseaux__el a:hover,
+.reseaux__el a:focus{
+    width: 85px;
+    height: 85px;
+}
+
+img{
+    max-width: 100%;
+}
+
+.btn{
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.btn--theme{
+    width: 75px;
+    height: 75px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: url(../picto/jour-nuit.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+hr{
+    height: 2px;
+    background-color: #FF0000;
+    border: none;
+}
+
+.menu__liste--footer{
+    margin-bottom: 20px;
+}
+
+.menu__el--footer{
+    margin-right: 15px;
+}
+
+.menu__el--footer a{
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+}
+
+.menu__el--footer a:hover{
+    text-decoration: underline red;
+}
+
+.menu__el--footer a:focus{
+    text-decoration: underline red;
+}
+
+.menu__el--footer a:visited{
+    color: rgba(255, 0, 0, 0.15);
+}
+
+.copyright{
+    font-size: 20px;
+}
+
+.section--footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dwm{
+    margin-bottom: 20px;
+}
+
+.section--article1{
+    background-color: rgb(180, 0, 0);
+    color: white;
+    padding: 15% 0;
+    margin-bottom: 0;
+}
+
+.section--article1 a{
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.section--article1 a:hover,
+.section--article1 a:focus{
+    text-decoration: underline;
+}
+
+.section--article1 a:visited{
+    color: rgb(150, 150, 150);
+}
+
+.title--article1{
+    color: white;
+}
+
+.section--article2{
+    padding: 15% 0;
+}
+
+.section--article2 a{
+    color: red;
+    text-decoration: none;
+    font-style: italic;
+}
+
+.section--article2 a:hover,
+.section--article2 a:focus{
+    text-decoration: underline;
+}
+
+.section--article2 a:visited{
+    color: rgb(150, 0, 0);
+}
+
+.title--article2{
+    font-size: 32px;
+}
+
+.title--ui{
+    text-align: left;
+}
+
+.liens ol{
+    list-style-type: none;
+    padding: 0;
+}
+.liens li{
+    display: inline-block;
+    font-style: italic;
+    color: red;
+}
+.liens li.visited{
+    color: rgb(150, 150, 150);
+}
+
+.elements ul{
+    list-style: none;
+}
+.elements ul li::before {
+    content: "\2022";   
+    color: red;  
+    display: inline-block;  
+    width: 1em; 
+    margin-left: -1em;
+    text-align: left;
+}
+
+.container--ui{
+    margin-bottom: 10%;
+}
+
+.container--credit{
+    margin-bottom: 200px;
+}
+
+.elements--credit{
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.section--credit{
+    margin-top: 100px;
+}
+
+@media (min-width: 900px){
+    body{
+        font-size: 20px;
+    }
+
+    .menu__el a{
+        font-size: 32px;
+        margin-right: 30px;
+    }
+
+    .title{
+        font-size: 60px;
+    }
+
+    .reseaux__el a{
+        width: 100px;
+        height: 100px;
+    }
+
+    .reseaux__el a:hover,
+    .reseaux__el a:focus{
+        width: 110px;
+        height: 110px;
+    }
+
+    .section--footer .container{
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+
+    .menu__liste--footer{
+        order: 5;
+    }
+
+    .section--article1{
+        padding: 10%;
+    }
+
+    .section--article2{
+        padding: 10% 0;
+    }
+
+    .container--credit{
+        margin-bottom: 250px;
+    }
+
+}
+
+@media (min-width: 1440px){
+    .section--main{
+        display: flex;
+    }
+
+    .avatar{
+        flex-basis: 50%;
+        flex-shrink: 0;
+        margin-left: 50px;
+    }
+
+    .section--main .avatar{
+        order: 5;
+    }
+
+    .title{
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .title--credit{
+        text-align: center;
+    }
+
+    .reseaux{
+        justify-content: left;
+    }
+
+    .reseaux__el{
+        margin-left: -20px;
+
+    }
+
+    .section--article1{
+        padding: 5% 40% 5% 0;
+    }
+
+    .section--article2{
+        padding: 5% 0 5% 40%;
+    }
+
+    .container--credit{
+        margin-bottom: 280px;
+    }
+}
